@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <input type="text" onChange={(e) => setText(e?.target?.value)}/>
-        <span>Text should be.... {reverseString(text)}</span>
+        <span style={{ marginTop: 30, color: 'cyan'}}>Text should be.... "{reverseString(text)}"</span>
       </header>
     </div>
   );
