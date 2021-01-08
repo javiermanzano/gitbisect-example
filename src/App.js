@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
-function reverseString(str) {
+const reverseString = (str) => {
   var splitString = str.split("");
-  var reverseArray = splitString.reverse();
+  var reverseArray = splitString.reverse().reverse();
   var joinArray = reverseArray.join("");
   return joinArray;
 }
 
-function App() {
+const App = () => {
   const [text, setText] = useState('');
   return (
     <div className="App">
